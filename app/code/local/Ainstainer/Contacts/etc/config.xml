@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ainstainer_Contacts>
+            <version>0.0.1</version>
+        </Ainstainer_Contacts>
+    </modules>
+    <global>
+        <helpers>
+            <contacts>
+                <class>Ainstainer_Contacts_Helper</class>
+            </contacts>
+            <contacts>
+                <rewrite>
+                    <data>Ainstainer_Contacts_Helper_Data</data>
+                </rewrite>
+            </contacts>
+        </helpers>
+    </global>
+</config>
