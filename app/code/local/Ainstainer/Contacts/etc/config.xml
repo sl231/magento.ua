@@ -7,9 +7,9 @@
     </modules>
     <global>
         <helpers>
-            <contacts>
+            <ainstainer_contacts>
                 <class>Ainstainer_Contacts_Helper</class>
-            </contacts>
+            </ainstainer_contacts>
             <contacts>
                 <rewrite>
                     <data>Ainstainer_Contacts_Helper_Data</data>
