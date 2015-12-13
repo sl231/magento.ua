@@ -27,5 +27,12 @@
                 </args>
             </aincontact>
         </routers>
+        <layout>
+            <updates>
+                <aincontact>
+                    <file>ainstainer/aincontact.xml</file>
+                </aincontact>
+            </updates>
+        </layout>
     </frontend>
 </config>
