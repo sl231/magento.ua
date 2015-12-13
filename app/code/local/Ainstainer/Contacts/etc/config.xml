@@ -17,4 +17,15 @@
             </contacts>
         </helpers>
     </global>
+    <frontend>
+        <routers>
+            <aincontact>
+                <use>standard</use>
+                <args>
+                    <module>Ainstainer_Contacts</module>
+                    <frontName>aincontact</frontName>
+                </args>
+            </aincontact>
+        </routers>
+    </frontend>
 </config>
