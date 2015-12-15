@@ -12,7 +12,7 @@
             </ainstainer_contacts>
             <contacts>
                 <rewrite>
-                    <data>Ainstainer_Contacts_Helper_Data</data>
+                    <data>Ainstainer_Contacts_Helper_Data</data><!-- Для реврайта лучше создавать отдельный файл -->
                 </rewrite>
             </contacts>
         </helpers>
