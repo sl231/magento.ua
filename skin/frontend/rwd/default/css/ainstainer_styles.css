@@ -1,3 +1,13 @@
 .footer {
     border:none;
 }
+div.banners {
+    /*width: 100%;*/
+    /*text-align: justify*/
+    display: flex;
+    justify-content: space-between;
+
+}
+div.banners img {
+    border: 8px #eee solid;
+}
