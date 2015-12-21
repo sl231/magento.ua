@@ -1,0 +1,25 @@
+<?php if (($_products = $this->getProductCollection()) && $_products->getSize()): ?>
+    <div class="most_popular">
+        <h2><?php echo $this->__('Most popular products') ?></h2>
+        <?php
+            $_collectionSize = 3;
+        ?>
+        <ul class="products-grid" id="products-grid-table">
+            <?php foreach ($_products->getItems() as $_product): ?>
+                <li>
+                        <a class="product-image" href="<?php echo $_product->getProductUrl() ?>">
+                            <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image'); ?>" alt=""/>
+                        </a>
+                        <h3 class="product-name">
+                            <a href="<?php echo $_product->getProductUrl() ?>" >
+                                <?php echo $this->htmlEscape($_product->getName()) ?>
+                            </a>
+                        </h3>
+                        <div class="a-center">
+                            <?php echo $this->getPriceHtml($_product, true) ?>
+                        </div>
+                </li>
+                <?php endforeach; ?>
+        </ul>
+    </div>
+<?php endif; ?>
