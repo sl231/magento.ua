@@ -11,3 +11,11 @@ div.banners {
 div.banners img {
     border: 8px #eee solid;
 }
+
+div.most_popular {
+    margin-top: 20px;
+}
+
+div.most_popular h2 {
+    text-align: center;
+}

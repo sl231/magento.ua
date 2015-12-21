@@ -1,6 +1,6 @@
 <?php
 
-class Ainstainer_Homepage_Block_Mostpopular extends Mage_Catalog_Block_Product_Abstract{
+class Ainstainer_Homepage_Block_Product_Mostpopular extends Mage_Catalog_Block_Product_Abstract{
     public function __construct(){
         parent::__construct();
         $storeId    = Mage::app()->getStore()->getId();
