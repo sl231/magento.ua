@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Ainstainer_Homepage>
-            <version>0.0.1</version>
+            <version>0.1.2</version>
         </Ainstainer_Homepage>
     </modules>
     <global>
@@ -11,5 +11,27 @@
                 <class>Ainstainer_Homepage_Block</class>
             </homepage>
         </blocks>
+        <models>
+            <ainstainer_homepage>
+                <class>Ainstainer_Homepage_Model</class>
+                <resourceModel>ainstainer_homepage_resource</resourceModel>
+            </ainstainer_homepage>
+            <ainstainer_homepage_resource>
+                <class>Ainstainer_Homepage_Model_Resource</class>
+                <entities>
+                    <ainstainer_homepage>
+                        <table>ain_banner</table>
+                    </ainstainer_homepage>
+                </entities>
+            </ainstainer_homepage_resource>
+        </models>
+        <resources>
+            <ainstainer_homepage_setup>
+                <setup>
+                    <module>Ainstainer_Homepage</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </ainstainer_homepage_setup>
+        </resources>
     </global>
 </config>
