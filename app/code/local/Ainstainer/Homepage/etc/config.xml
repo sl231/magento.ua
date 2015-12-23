@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Ainstainer_Homepage>
-            <version>0.1.2</version>
+            <version>0.1.0</version>
         </Ainstainer_Homepage>
     </modules>
     <global>
@@ -19,9 +19,9 @@
             <ainstainer_homepage_resource>
                 <class>Ainstainer_Homepage_Model_Resource</class>
                 <entities>
-                    <ainstainer_homepage>
+                    <banner>
                         <table>ain_banner</table>
-                    </ainstainer_homepage>
+                    </banner>
                 </entities>
             </ainstainer_homepage_resource>
         </models>
