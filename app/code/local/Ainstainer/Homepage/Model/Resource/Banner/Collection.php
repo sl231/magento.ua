@@ -6,4 +6,23 @@ class Ainstainer_Homepage_Model_Resource_Banner_Collection extends Mage_Core_Mod
     {
         $this->_init("ainstainer_homepage/banner");
     }
+
+    /**
+     * @return array
+     */
+    public function getDataForSource()
+    {
+        $data = $this->addFieldToSelect(['banner_id','title'])->getData();
+        $res = [];
+        foreach($data as $banner) {
+            $res[$banner['banner_id']] = $banner['title'];
+        }
+
+        return $res;
+    }
+
+    public function getActiveSlides()
+    {
+        return $this->addFilter('status',1);
+    }
 }
