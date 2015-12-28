@@ -20,4 +20,9 @@ class Ainstainer_Homepage_Model_Resource_Banner_Collection extends Mage_Core_Mod
 
         return $res;
     }
+
+    public function getActiveSlides()
+    {
+        return $this->addFilter('status',1);
+    }
 }
