@@ -2,10 +2,32 @@
 <config>
     <modules>
         <Ainstainer_Contacts>
-            <version>0.1.0</version>
+            <version>0.1.1</version>
         </Ainstainer_Contacts>
     </modules>
     <global>
+        <models>
+            <ainstainer_contacts>
+                <class>Ainstainer_Contacts_Model</class>
+                <resourceModel>ainstainer_contacts_resource</resourceModel>
+            </ainstainer_contacts>
+            <ainstainer_contacts_resource>
+                <class>Ainstainer_Contacts_Model_Resource</class>
+                <entities>
+                    <contact>
+                        <table>ain_contact</table>
+                    </contact>
+                </entities>
+            </ainstainer_contacts_resource>
+        </models>
+        <resources>
+            <ainstainer_contacts_setup>
+                <setup>
+                    <module>Ainstainer_Contacts</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </ainstainer_contacts_setup>
+        </resources>
         <helpers>
             <ainstainer_contacts>
                 <class>Ainstainer_Contacts_Helper</class>

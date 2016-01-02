@@ -3,7 +3,7 @@
 </div>
 <!--<div>--><?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('contact_gmap')->toHtml(); ?><!--</div>-->
 
-<form action="<?php echo $this->getFormAction(); ?>" id="contactForm" method="post" class="scaffold-form">
+<form action="<?php echo $this->getUrl('*/*/save'); ?>" id="contactForm" method="post" class="scaffold-form">
     <div class="fieldset">
         <h2 class="legend"><?php echo Mage::helper('contacts')->__('Contact Information') ?></h2>
         <p class="required"><?php echo Mage::helper('contacts')->__('* Required Fields') ?></p>
@@ -12,28 +12,38 @@
                 <div class="field">
                     <label for="name" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Name') ?></label>
                     <div class="input-box">
-                        <input name="name" id="name" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('contacts')->__('Name')) ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserName()) ?>" class="input-text required-entry" type="text" />
+                        <input name="name" id="name" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserName()) ?>"
+                               class="input-text required-entry" type="text" />
                     </div>
                 </div>
                 <div class="field">
-                    <label for="email" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Email') ?></label>
+                    <label for="name" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('E-mail') ?></label>
                     <div class="input-box">
-                        <input name="email" id="email" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('contacts')->__('Email')) ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserEmail()) ?>" class="input-text required-entry validate-email" type="email" autocapitalize="off" autocorrect="off" spellcheck="false" />
+                        <input name="email" id="email" class="input-text required-entry validate-email" type="text" />
                     </div>
                 </div>
-            </li>
-            <li>
-                <label for="telephone"><?php echo Mage::helper('contacts')->__('Telephone') ?></label>
-                <div class="input-box">
-                    <input name="telephone" id="telephone" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('contacts')->__('Telephone')) ?>" value="" class="input-text" type="tel" />
+                <div class="field">
+                    <label for="tel"><?php echo Mage::helper('contacts')->__('Phone') ?></label>
+                    <div class="input-box">
+                        <input name="tel" id="tel" class="input-text" type="text" />
+                    </div>
                 </div>
-            </li>
-            <li class="wide">
-                <label for="description" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Description') ?></label>
-                <div class="input-box">
-                    <textarea name="description" id="description" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('contacts')->__('Description')) ?>" class="required-entry input-text" cols="5" rows="3"></textarea>
+                <div class="field">
+                    <label for="description" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Description') ?></label>
+                    <div class="input-box">
+                        <textarea name="description" id="description" class="input-text required-entry"></textarea>
+                    </div>
                 </div>
             </li>
         </ul>
     </div>
+    <div class="buttons-set">
+        <button type="submit" class="button"><?php echo Mage::helper('contacts')->__('Submit') ?></button>
+    </div>
+</form>
+<script type="text/javascript">
+    //<![CDATA[
+    var contactForm = new VarienForm('contactForm', true);
+    //]]>
+</script>
 </form>
