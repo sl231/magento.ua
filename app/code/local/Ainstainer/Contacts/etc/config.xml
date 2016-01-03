@@ -38,6 +38,11 @@
                 </rewrite>
             </contacts>
         </helpers>
+        <blocks>
+            <ainstainer_contacts>
+                <class>Ainstainer_Contacts_Block</class>
+            </ainstainer_contacts>
+        </blocks>
     </global>
     <frontend>
         <routers>
@@ -57,4 +62,15 @@
             </updates>
         </layout>
     </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <ainstainer_contacts before="Mage_Adminhtml">Ainstainer_Contacts_Adminhtml</ainstainer_contacts>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>
