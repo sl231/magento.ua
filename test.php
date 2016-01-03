@@ -44,6 +44,8 @@ Mage::app('admin')->setUseSessionInUrl(false);
 
 umask(0);
 
-echo Mage::getConfig()->getNode('modules/Ainstainer_Contacts/version');
-$row = Mage::getModel('ainstainer_homepage/banner');//->load(1)->getData();
-var_dump(Mage::getModel('ainstainer_homepage/banner')->getCollection()->addFilter('status',1)->setOrder('position','ASC')->getData());
+//echo Mage::getConfig()->getNode('modules/Ainstainer_Contacts/version');
+//$row = Mage::getModel('ainstainer_homepage/banner');//->load(1)->getData();
+//var_dump(Mage::getModel('ainstainer_homepage/banner')->getCollection()->addFilter('status',1)->setOrder('position','ASC')->getData());
+
+var_dump(Mage::getModel('ainstainer_contacts/contact'));
