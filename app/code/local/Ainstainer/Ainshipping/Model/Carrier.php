@@ -14,7 +14,7 @@ class Ainstainer_Ainshipping_Model_Carrier extends Mage_Shipping_Model_Carrier_A
     public function getAllowedMethods()
     {
         return array(
-            'standard'    =>  'Standard delivery'
+            'standard' => 'Standard delivery'
         );
     }
 

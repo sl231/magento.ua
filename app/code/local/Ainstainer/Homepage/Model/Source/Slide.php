@@ -2,6 +2,9 @@
 
 class Ainstainer_Homepage_Model_Source_Slide extends Mage_Eav_Model_Entity_Attribute_Source_Abstract
 {
+    /**
+     * @return array
+     */
     public function getAllOptions()
     {
 

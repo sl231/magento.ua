@@ -2,6 +2,9 @@
 
 class Ainstainer_Homepage_Block_Banners extends Mage_Core_Block_Template
 {
+    /**
+     * @return Ainstainer_Homepage_Model_Banner
+     */
     public function getBannerCollection()
     {
         /* @var $bannersCollection Ainstainer_Homepage_Model_Banner*/

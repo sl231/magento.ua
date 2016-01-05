@@ -25,6 +25,6 @@ class Ainstainer_Contacts_IndexController extends Mage_Core_Controller_Front_Act
             Mage::log('Mage::getModel(ainstainer_contacts/contact)->validate(): '.print_r($validate, true));
         }
 
-        $this->_redirect('aincontact');
+        $this->_redirect('*/');
     }
 }
