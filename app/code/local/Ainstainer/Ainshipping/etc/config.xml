@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ainstainer_Ainshipping>
+            <version>0.0.1</version>
+        </Ainstainer_Ainshipping>
+    </modules>
+    <global>
+        <models>
+            <ainstainer_ainshipping>
+                <class>Ainstainer_Ainshipping_Model</class>
+            </ainstainer_ainshipping>
+        </models>
+    </global>
+    <default>
+        <carriers>
+            <ainstainer_ainshipping>
+                <active>1</active>
+                <sort_order>10</sort_order>
+                <model>ainstainer_ainshipping/carrier</model>
+                <title>Ainstainer Shipping Carrier</title>
+                <sallowspecific>0</sallowspecific>
+            </ainstainer_ainshipping>
+        </carriers>
+    </default>
+</config>
